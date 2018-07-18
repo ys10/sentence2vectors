@@ -106,4 +106,4 @@ venv.bak/
 .idea/
 data/
 log/
-s2w_model/
+w2v_model/
