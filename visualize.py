@@ -8,7 +8,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 def visualize(model, output_path):
     meta_file_path = os.path.join(output_path, "w2v_metadata.tsv")
-    placeholder = np.zeros((len(model.wv.index2word), 200))
+    placeholder = np.zeros((len(model.wv.index2word), 256))
 
     with open(meta_file_path, 'wb') as f:
         for i, word in enumerate(model.wv.index2word):
